@@ -1,3 +1,6 @@
+# Deprecation notice
+This repository is now deprecated. Please refer to the newer version of the same available at https://github.com/BoschSensortec/BMP2-Sensor-API/
+
 # BMP280 sensor API
 
 > This package contains BMP280 sensor API
