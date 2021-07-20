@@ -1,45 +1,32 @@
 # Linux BMP280
-Thi is the Linux implementation of the official Bosch BMP280 examples
-available at https://github.com/BoschSensortec/BMP280_driver
 
+This is the Linux implementation of the official Bosch BMP280 examples
+available at https://github.com/BoschSensortec/BMP280_driver .
 
-sensor compiled for Linux under Raspberry PI.
+Tested under Debian GNU/Linux 10 and a Raspberry Pi 4 .
 
-This repository is now deprecated. Please refer to the newer version of the same
+## Building
 
-# BMP280 sensor API
+```
+$ Makefile
+```
 
-> This package contains BMP280 sensor API
+## Running
 
-## Sensor Overview
-BMP280 is an absolute barometric pressure sensor especially designed for mobile applications.The sensor module is housed in an extremely compact package. Its small dimensions and its low power consumption allow for the implementation in battery powered devices such as mobile phones, GPS modules or watches. BMP280 is based on Bosch's proven Piezo-resistive pressure sensor technology featuring high accuracy and linearity as well as long term stability and high EMC robustness.
+```
+$ ./build/temperature
+UT: 524288, T32: 2495, T: 24.950590
+UT: 542776, T32: 3063, T: 30.631387
+UT: 542776, T32: 3063, T: 30.631387
+UT: 542776, T32: 3063, T: 30.631387
+^C
+```
 
-## Key features
-* Operation range (full accuracy) : Pressure: 300...1100 hPa.  Temperature: -40 .... +85 degrees C .
-
-* Absolute accuracy(Temp. @ 0 ..... +65 degrees C)  : ~ +/- 1 hPa </br>
-
-* Relative accuracy (p = 700…900hPa, Temp. @ +25 .... +40 degrees C): +/-0.12 hPa (typical) equivalent to ±1 m.
-
-* Average current consumption (1 Hz data refresh rate) :   2.74 μA, typical (ultra-low power mode).
-
-* Average current consumption in sleep mode :   0.1 μA.
-
-* Average measurement time :   5.5 msec (ultra-low power preset).
-
-* Supply voltage VDDIO :  1.2 ... 3.6 V.
-
-* Supply voltage VDD : 1.71 ... 3.6 V.
-
-* Resolution of data : Pressure: 0.01 hPa ( < 10 cm).  Temperature: 0.01 degree C.
-
-* Temperature coefficient offset (+25°…+40°C @900hPa) :  ± 0.12 hPa (typical)   equivalent to ±1 m
-
-* Interface :  I²C and SPI
-
-* Package dimensions :   8-Pin LGA with metal.   2.0 x 2.5 x 0.95 mm³
-
-For more information refer product page [Link](https://www.bosch-sensortec.com/bst/products/all_products/bmp280)
-
----
-#### Copyright (C) 2018 Bosch Sensortec GmbH
+```
+$ ./build/pressure
+UP: 524288, P32: 64555, P64: 16525345, P64N: 64552, P: 64552.135062
+UP: 387216, P32: 86664, P64: 22184980, P64N: 86660, P: 86660.081704
+UP: 387216, P32: 86664, P64: 22184980, P64N: 86660, P: 86660.081704
+UP: 387216, P32: 86664, P64: 22184980, P64N: 86660, P: 86660.081704
+^C
+```
