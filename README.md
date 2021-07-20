@@ -1,5 +1,11 @@
-# Deprecation notice
-This repository is now deprecated. Please refer to the newer version of the same available at https://github.com/BoschSensortec/BMP2-Sensor-API/
+# Linux BMP280
+Thi is the Linux implementation of the official Bosch BMP280 examples
+available at https://github.com/BoschSensortec/BMP280_driver
+
+
+sensor compiled for Linux under Raspberry PI.
+
+This repository is now deprecated. Please refer to the newer version of the same
 
 # BMP280 sensor API
 
@@ -11,24 +17,24 @@ BMP280 is an absolute barometric pressure sensor especially designed for mobile 
 ## Key features
 * Operation range (full accuracy) : Pressure: 300...1100 hPa.  Temperature: -40 .... +85 degrees C .
 
-* Absolute accuracy(Temp. @ 0 ..... +65 degrees C)  : ~ +/- 1 hPa </br>	
-  
+* Absolute accuracy(Temp. @ 0 ..... +65 degrees C)  : ~ +/- 1 hPa </br>
+
 * Relative accuracy (p = 700…900hPa, Temp. @ +25 .... +40 degrees C): +/-0.12 hPa (typical) equivalent to ±1 m.
-  									
+
 * Average current consumption (1 Hz data refresh rate) :   2.74 μA, typical (ultra-low power mode).
- 
+
 * Average current consumption in sleep mode :   0.1 μA.
 
 * Average measurement time :   5.5 msec (ultra-low power preset).
-  
+
 * Supply voltage VDDIO :  1.2 ... 3.6 V.
 
 * Supply voltage VDD : 1.71 ... 3.6 V.
-  
+
 * Resolution of data : Pressure: 0.01 hPa ( < 10 cm).  Temperature: 0.01 degree C.
- 
+
 * Temperature coefficient offset (+25°…+40°C @900hPa) :  ± 0.12 hPa (typical)   equivalent to ±1 m
- 
+
 * Interface :  I²C and SPI
 
 * Package dimensions :   8-Pin LGA with metal.   2.0 x 2.5 x 0.95 mm³
