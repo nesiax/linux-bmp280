@@ -8,7 +8,7 @@ Tested under Debian GNU/Linux 10 and a Raspberry Pi 4 .
 ## Building
 
 ```
-$ Makefile
+$ make
 ```
 
 ## Running
