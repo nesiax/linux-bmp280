@@ -34,7 +34,8 @@ UP: 387216, P32: 86664, P64: 22184980, P64N: 86660, P: 86660.081704
 ## Troubleshooting
 
 First, you have to make sure the sensor is connected properly to the
-RPi, the `i2cdetect` over the `1` bus will show the sensor.
+RPi, the `i2cdetect` command over the `1` bus will show the sensor at
+the `0x76` address.
 
 
 ```
